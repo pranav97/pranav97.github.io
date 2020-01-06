@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project - AlgoViz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">Pranav's Portfolio </a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<!-- <li>
+								<a href="#" class="icon solid fa-angle-down">Layouts</a>
+								<ul>
+									<li><a href="generic.html">Generic</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="elements.html">Elements</a></li>
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Option One</a></li>
+											<li><a href="#">Option Two</a></li>
+											<li><a href="#">Option Three</a></li>
+											<li><a href="#">Option Four</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li> -->
+							<!-- <li><a href="#" class="button">Sign Up</a></li> -->
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Algorithm Visualizer for Number of Islands</h2>
+						<p>Problems can have many solutions. In the case of the Number of Islands problem there are at least 3 different solutions.</p>
+					</header>
+					<div class="box">
+						<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+						<h3>Problem Statement</h3>
+						<p>Inputs: Grid of 0s and 1s. 1 indicates land and 0 indicates water. </p>
+						<p>Example: </br>
+							Input: </br>
+							11000</br>
+							11000</br>
+							00100</br>
+							00011</br>
+							</br>
+						</p>
+						<p>Output: Count the number of 'Islands'. An island is a 1 or a land mass by water on all 4 sides. (up, down, left, right) </p>
+						<p>
+							Example output: 3</br>
+						</p>
+						<div class="row">
+							<div class="row-6 row-12-mobilep">
+								<h3>Depth First Search</h3>
+								<p>In the context of a graph, depth first search technique visits neighbors until it reaches the leaf nodes. </p>
+								<p>In the case of this grid, we are searching for land until we can't find land anymore. </p>
+							</div>
+
+							<div class="row-6 row-12-mobilep">
+								<h3>Breath First Search</h3>
+								<p>In the context of a graph, breath first search technique visits <strong>closest  neighbors to the source</strong> until it reaches the leaf nodes. </p>
+								<p>In the case of this grid, we are searching for land until we can't find land anymore. </p>
+							</div>
+
+							<div class="row-6 row-12-mobilep">
+								<h3>Union Find or Disjoint-set</h3>
+								<p>Union Find is a data structure that tracks a set of elements partitioned into disjoint or non-overlapping subsets. This technique of dividing the components into non-overlapping sets can be used in many problems. For example,</p>
+								<ul>
+									<li>
+										Finding out the number of connected components in a digital picture.
+									</li>
+									<li>
+
+										Finding out if there exists a path between two nodes in a network. 
+									</li>
+									<li>
+										Kruskal's algorithm - This greedy algorithm finds the minimum weight spanning tree for a connected graph. A minimum weight spanning tree has all the vertices of the fully connected graph. More importantly, the algorithm minimizes the weights in the graph. In a network situation, the edges in the minimum weight spannning tree might be used over edges that are not since those links have the least cost (take the least time). 
+										<ul>
+											<li>
+												For more information about Kruskal's algorithm, <a href="http://lcm.csa.iisc.ernet.in/dsa/node184.html" 
+												target="_blank">click here.</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										For more information about the union find algorithm, <a 
+										href="https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf"
+										target="_blank">click here. </a>
+									</li>
+								</ul>
+								<p>In the case of this grid, all of the land masses or 1s are going to be elements in the disjoint-set data structure. After joining or unifying neighboring sets in the grid, the number of islands in the grid can be found out.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li>
+							<a 
+								href="https://github.com/pranav97/" target="_blank" 
+								class="icon brands fa-github">
+								<span class="label">Github</span>
+							</a>
+						</li>
+						<li>
+							<a 
+								href="https://www.linkedin.com/in/pranav97/" 
+								target="_blank" 							
+								class="icon brands fa-linkedin">
+								<span class="label">LinkedIn</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Pranav Raghavan. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
