@@ -10,10 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/my-styles.css" />
 	</head>
 	<body class="is-preload">
-		<div id="page-wrapper">
-
 			<!-- Header -->
 				<header id="header">
 					<h1><a href="index.html">Pranav's Portfolio </a></h1>
@@ -43,71 +42,90 @@
 				</header>
 
 			<!-- Main -->
-				<section id="main" class="container">
-					<header>
-						<h2>Algorithm Visualizer for Number of Islands</h2>
-						<p>Problems can have many solutions. In the case of the Number of Islands problem there are at least 3 different solutions.</p>
-					</header>
-					<div class="box">
-						<span class="image featured"><img src="images/visualizer.png" alt="" /></span>
-						<h3>Problem Statement</h3>
-						<p>Inputs: Grid of 0s and 1s. 1 indicates land and 0 indicates water. </p>
-						<p>Example: </br>
-							Input: </br>
-							11000</br>
-							11000</br>
-							00100</br>
-							00011</br>
-							</br>
-						</p>
-						<p>Output: Count the number of 'Islands'. An island is a 1 or a land mass by water on all 4 sides. (up, down, left, right) </p>
-						<p>
-							Example output: 3</br>
-						</p>
-						<div class="row">
-							<div class="row-6 row-12-mobilep">
-								<h3>Depth First Search</h3>
-								<p>In the context of a graph, depth first search technique visits neighbors until it reaches the leaf nodes. </p>
-								<p>In the case of this grid, we are searching for land until we can't find land anymore. </p>
-							</div>
+			<section id="main" class="container">
+				<header>
+					<h2>Algorithm Visualizer for Number of Islands</h2>
+					<p>Problems can have many solutions. In the case of the Number of Islands problem there are at least 3 different solutions.</p>
+				</header>
+				<div class="box">
+					<span class="image featured"><img src="images/visualizer.png" alt="" /></span>
+					<h3>Problem Statement</h3>
+					<p><strong>Inputs</strong>: Grid of 0s and 1s. 1 indicates land and 0 indicates water. </p>
+					<p>Example: </br>
+						Input: </br>
+						11000</br>
+						11000</br>
+						00100</br>
+						00011</br>
+						</br>
+					</p>
+					<p><strong>Output</strong>: Count the number of 'Islands'. An island is a 1 or a land mass by water on all 4 sides. (up, down, left, right) </p>
+					<p>
+						Example output: 3</br>
+					</p>
 
-							<div class="row-6 row-12-mobilep">
-								<h3>Breath First Search</h3>
-								<p>In the context of a graph, breath first search technique visits <strong>closest  neighbors to the source</strong> until it reaches the leaf nodes. </p>
-								<p>In the case of this grid, we are searching for land until we can't find land anymore. </p>
-							</div>
+					<div class="row-6 row-12-mobilep">
+						<h3>Depth First Search</h3>
+						<p>In the context of a graph, depth first search technique visits neighbors until it reaches the leaf nodes. </p>
+						<p>In the case of this grid, we are searching for land until we can't find land anymore. </p>
+					</div>
 
-							<div class="row-6 row-12-mobilep">
-								<h3>Union Find or Disjoint-set</h3>
-								<p>Union Find is a data structure that tracks a set of elements partitioned into disjoint or non-overlapping subsets. This technique of dividing the components into non-overlapping sets can be used in many problems. For example,</p>
+					<div class="row-6 row-12-mobilep">
+						<h3>Breath First Search</h3>
+						<p>In the context of a graph, breath first search technique visits <strong>closest  neighbors to the source</strong> until it reaches the leaf nodes. </p>
+						<p>In the case of this grid, we are searching for land until we can't find land anymore. </p>
+					</div>
+
+					<div class="row-6 row-12-mobilep">
+						<h3>Union Find or Disjoint-set</h3>
+						<p>Union Find is a data structure that tracks a set of elements partitioned into disjoint or non-overlapping subsets. This technique of dividing the components into non-overlapping sets can be used in many problems. For example,</p>
+						<ul>
+							<li>
+								Finding out the number of connected components in a digital picture.
+							</li>
+							<li>
+
+								Finding out if there exists a path between two nodes in a network. 
+							</li>
+							<li>
+								Kruskal's algorithm - This greedy algorithm finds the minimum weight spanning tree for a connected graph. A minimum weight spanning tree has all the vertices of the fully connected graph. More importantly, the algorithm minimizes the weights in the graph. In a network situation, the edges in the minimum weight spannning tree might be used over edges that are not since those links have the least cost (take the least time). 
 								<ul>
 									<li>
-										Finding out the number of connected components in a digital picture.
-									</li>
-									<li>
-
-										Finding out if there exists a path between two nodes in a network. 
-									</li>
-									<li>
-										Kruskal's algorithm - This greedy algorithm finds the minimum weight spanning tree for a connected graph. A minimum weight spanning tree has all the vertices of the fully connected graph. More importantly, the algorithm minimizes the weights in the graph. In a network situation, the edges in the minimum weight spannning tree might be used over edges that are not since those links have the least cost (take the least time). 
-										<ul>
-											<li>
-												For more information about Kruskal's algorithm, <a href="http://lcm.csa.iisc.ernet.in/dsa/node184.html" 
-												target="_blank">click here.</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										For more information about the union find algorithm, <a 
-										href="https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf"
-										target="_blank">click here. </a>
+										For more information about Kruskal's algorithm, <a href="http://lcm.csa.iisc.ernet.in/dsa/node184.html" 
+										target="_blank">click here.</a>
 									</li>
 								</ul>
-								<p>In the case of this grid, all of the land masses or 1s are going to be elements in the disjoint-set data structure. After joining or unifying neighboring sets in the grid, the number of islands in the grid can be found out.</p>
-							</div>
-						</div>
+							</li>
+							<li>
+								For more information about the union find algorithm, <a 
+								href="https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf"
+								target="_blank">click here. </a>
+							</li>
+						</ul>
+						<p>In the case of this grid, all of the land masses or 1s are going to be elements in the disjoint-set data structure. After joining or unifying neighboring sets in the grid, the number of islands in the grid can be found out.</p>
 					</div>
-				</section>
+					<div class="links">
+						<ul class="actions special">
+							<!-- <li><a href="/visualizer.html" 
+								target="_blank" 
+								class="button alt">Read about it!
+							</a></li> -->
+						</ul>
+						<ul class="actions special">
+							<li><a href="https://number-islands.herokuapp.com" 
+							target="_blank" 
+							class="button alt">Show me!</a></li>
+						</ul>
+						<ul class="actions special">
+							<li><a href="https://github.com/pranav97/algorithm-visualizer"
+								target="_blank" 
+								class="button alt">Show me the code!
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				
+		</section>
 
 			<!-- Footer -->
 				<footer id="footer">
