@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+     Alpha by HTML5 UP
+     html5up.net | @ajlkn
+     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Project - Multithreaded Languages Comparison </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+        <div id="page-wrapper">
+            <header id="header">
+                <h1><a href="index.html">Pranav's Portfolio </a></h1>
+                <header id="header" class="alt">
+                    <h1><a href="index.html">Pranav's Portfolio </a></h1>
+                    <!-- <nav id="nav">
+                         <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li>
+                         <a href="#" class="icon solid fa-angle-down">Layouts</a>
+                         <ul>
+                         <li><a href="generic.html">Generic</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                         <li><a href="elements.html">Elements</a></li>
+                         <li>
+                         <a href="#">Submenu</a>
+                         <ul>
+                         <li><a href="#">Option One</a></li>
+                         <li><a href="#">Option Two</a></li>
+                         <li><a href="#">Option Three</a></li>
+                         <li><a href="#">Option Four</a></li>
+                         </ul>
+                         </li>
+                         </ul>
+                         </li>
+                         <li><a href="#" class="button">Sign Up</a></li>
+                         </ul>
+                         </nav> -->
+                </header>
+            </header> 
+
+            <!-- Main -->
+            <section id="main" class="container">
+                <header>
+                    <h2>Restaurant Menus Website</h2>
+                </header>
+
+                <div class="box">
+                    <div class="row-6 row-12-mobilep">
+		                    <p>This project has a collection of restaurants and menus in them kind of like GrubHub or Uber Eats. It is intended to give users the ability to look at the eat in menu before coming to the restaurant so they know what to order ahead of time.</p>
+                        <p> It uses a sqlite database with ORM for database interactions and python flask for the web framework. </p>
+                    </div>
+                    <span class="image featured"><img src="images/menus.png" height="auto" alt="" /></span>
+                    <div class="row-6 row-12-mobilep">
+                        <p>
+                            This is a flask project. Flask is micro web development framework that was created based on the WSGI(Web Server Gateway Interface) toolkit. WSGI is a simple calling convention that was created for webservers to forward requests to client side web apps written in Python. 
+                        </p>
+                    </div>
+                    <div class="row-6 row-12-mobilep">
+                        <p>One of the biggest take aways for me from this project is the basic web development concepts like kinds of HTTP verbs or request methods (get put post delete) and the response codes. </p>
+                        <p>I also built my own authentication and authorization systems and realized why it's good to have third party <strong>authorization</strong> such as a google log in. </p>
+                        <p>Each user gets to see a bunch of template restaurants and menus. After they log in they can add their own menus that will not be visible to other users. Users also can't delte the template menus and restaurants or other users content (because they can't see them). </p>
+                        <p>I've outlined some of the cool features of this website in case you don't want to explore around yourself even though I would highly recomend it, sign up only takes 10s.</p>
+                        <p> This would be the home page after a user logs in. </p>
+                        <div class="image featured"><img src="images/restaurants.png" alt="" /></div>
+                        <p>The picture below shows how it looks when you click on one of the restaurants. 
+
+                        <div class="image featured"><img src="images/menus.png" alt="" /></div>
+                        <p>If you try to delete a restaurant or menu item that you are not allowed to, this is what it looks like:</p>
+                        <div class="image featured"><img src="images/flash_message_not_allowed.png" alt="" /></div>
+                        <p>If you try to delete something you ARE allowed to delte this is how it looks:</p>
+                        <div class="image featured"><img src="images/are_you_sure.png" alt="" /></div>
+
+                        <p>These options are identical for if the user wants to create a new menu item or a edit an existing one that they are allowed to change. The only difference is that the template is completely empty when they are creating a new menu item. </p>
+                        <div class="image featured" ><img src="images/edit_new_menu_item.png" alt="" /></div>
+                        </br>
+                    </div>
+
+                    <div class="row-6 row-12-mobilep">
+                        <div class="links">
+                            <ul class="actions special">
+                                <li> <a href="https://infinite-ocean-25307.herokuapp.com/"
+                                        target="_blank"
+                                        class="button alt">Show me! </a></li>
+                            </ul>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/pranav97/flasky_restaurant"
+                                       target="_blank"
+                                       class="button alt">Show me the code!
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li>
+                        <a
+                            href="https://github.com/pranav97/" target="_blank" 
+                            class="icon brands fa-github">
+                            <span class="label">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/pranav97/"
+                            target="_blank"
+                            class="icon brands fa-linkedin">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Pranav Raghavan. All rights reserved.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
+
+                </div>
+
+                <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.dropotron.min.js"></script>
+                <script src="assets/js/jquery.scrollex.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
